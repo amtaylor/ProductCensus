@@ -15,6 +15,10 @@ a {
   color: inherit;
 }
 
+a:focus {
+  outline: none;
+}
+
 .navbar-default {
 	background-color: white;
 }
@@ -33,6 +37,7 @@ a {
 	padding-top: 10px;
 	padding-left: 12px;
 	color: rgb(150,152,156);
+  /* font-weight: 300; */
 }
 
 .census {
@@ -40,9 +45,13 @@ a {
 }
 
 main {
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
+.tabs-left .nav-tabs li > a {
+  font-weight: 300;
+}
 
 .table-side h3 {
   margin-top: 2px;
@@ -72,6 +81,10 @@ main {
   padding-left: 0px;
 }
 
+.table-side ul li {
+  padding-bottom: 40px;
+}
+
 p.top-level {
   color: rgb(150,152,156);
 }
@@ -79,6 +92,11 @@ p.top-level {
 p.view-more {
   color: rgb(150,152,156);
   font-style: italic;
+}
+
+.more-categories {
+  color: #428bca;
+  font-size: 24px;
 }
 
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
@@ -114,6 +132,14 @@ a:hover, a:focus {
   border: 1px solid rgb(150,152,156);
 }
 
+.tooltip-inner {
+  background-color: rgb(70,70,72);
+}
+
+.tooltip.right .tooltip-arrow {
+  border-right: 5px solid rgb(70,70,72);
+}
+
 /* Featured Stacks side */
 
 .featured-stacks-side h2{
@@ -137,10 +163,6 @@ ul {
 .featured-stacks-side h4 {
   font-size: 18px;
   color: rgb(150,152,156);
-}
-
-.featured-stacks-side h4:hover {
-  color: #428bca;
 }
 
 .featured-stacks-side table {
@@ -168,5 +190,47 @@ ul {
 .featured-stacks-side p.view-more {
   margin-bottom: 0px;
 }
+
+/* modal */
+
+.modal-dialog {
+  max-width: 380px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-content {
+  border-radius: 0px;
+}
+
+.form-control {
+  border-radius: 0px;
+}
+
+.form-control:focus {
+  border-color: white;
+  border-bottom-color: rgb(70,70,72);
+  outline: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 0px;
+}
+
+.modal-body .btn {
+  margin-left: 6px;
+  color: rgb(70,70,72);
+  background-color:rgb(216,216,216);
+}
+
+.modal-body .btn:hover {
+  color: white;
+  background-color: rgb(70,70,72);
+}
+
 
 
