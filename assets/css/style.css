@@ -19,6 +19,8 @@ a:focus {
   outline: none;
 }
 
+/* navbar */
+
 .navbar-default {
 	background-color: white;
 }
@@ -43,6 +45,13 @@ a:focus {
 .census {
 	color: rgb(70,70,72);
 }
+
+.navbar-toggle {
+  border-radius: 0px;
+  border: none;
+}
+
+/* main */
 
 main {
   padding-top: 30px;
@@ -140,6 +149,15 @@ a:hover, a:focus {
   border-right: 5px solid rgb(70,70,72);
 }
 
+@media (max-width: 767px) {
+  .more-categories {
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+  }
+
+}
+
 /* Featured Stacks side */
 
 .featured-stacks-side h2{
@@ -163,6 +181,10 @@ ul {
 .featured-stacks-side h4 {
   font-size: 18px;
   color: rgb(150,152,156);
+}
+
+.featured-stacks-side a:hover h4 {
+  color: #428bca;
 }
 
 .featured-stacks-side table {
@@ -231,6 +253,105 @@ ul {
   color: white;
   background-color: rgb(70,70,72);
 }
+
+/* Profile page layout */
+
+.profile-layout h1{
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+.profile-layout img{
+  float: left;
+  height: 150px;
+  width: 150px;
+  margin-right: 20px;
+}
+
+.profile-layout h2 {
+  font-size: 18px;
+  color: rgb(150,152,156);
+  margin-top: 10px;
+}
+
+.profile-layout h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.profile-layout .btn {
+  color: white;
+  background-color: #428bca;
+  border-color: #428bca;
+  margin-top: 32px;
+}
+
+.profile-layout .btn:hover {
+  color: #428bca;
+  background-color: white;
+  /* border-color: rgb(70,70,72); */
+}
+
+.profile-layout table {
+  margin-top: 20px;
+}
+
+.profile-layout .table>tbody>tr>td {
+  border-top: none;
+  padding-left: 0px;
+}
+
+.profile-layout .category {
+  margin-bottom: 30px;
+}
+
+.profile-layout .category h4 {
+  color: rgb(150,152,156);
+  border-bottom: rgb(150,152,156) 1px solid;
+  font-size: 16px;
+  padding-bottom: 4px;
+}
+
+.profile-layout .prod-category {
+  font-size: 16px;
+  color: rgb(150,152,156);
+}
+
+.profile-layout .prod {
+  font-size: 20px;
+  color: rgb(70,70,72);
+  padding-bottom: 20px;
+}
+
+.profile-layout .prod p {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-style: italic;
+}
+
+.profile-layout .prod img{
+  height: 40px;
+  width: 40px;
+}
+
+.profile-layout .prod>div:not(:first-child) {
+  margin-top: 0px;
+}
+
+.profile-layout .prod div div{
+  margin-top: 8px;
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+
 
 
 
